@@ -10,10 +10,9 @@ body {
   background-color: #f9f9f9;
   color: #333;
   height: 100vh;
-  background-image: url("https://vesti-k.ru/i/65/656634da1850b28331cb173f9c2fe0bf.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(3px); */
 }
 
 header {
@@ -21,14 +20,29 @@ header {
   color: white;
   padding: 1rem 2rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 2em;
 }
 
+header div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 header h1 {
   font-size: 2rem;
 }
 
+header img {
+  width: 4rem;
+  /* border: 1px solid black; */
+  border-radius: 1rem;
+}
 nav {
-  background-color: #1d3d4ddf;
+  /* background-color: #1d3d4ddf; */
   padding: 0.5rem;
   text-align: center;
 }
@@ -87,5 +101,14 @@ footer {
   }
   .hero div {
     max-width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  header div h1 {
+    display: none;
+  }
+  a{
+    font-size: smaller;
   }
 }
