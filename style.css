@@ -103,7 +103,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 0;
 }
 
 .hero img {
@@ -113,20 +113,24 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.hero h2 {
-  font-size: 1.8rem;
+.hero h1 {
+  font-size: 1rem;
+  /* border: 1px solid black; */
   margin-bottom: 1rem;
   color: #2b3a67;
   text-align: center;
 }
 
 .hero p {
+  border: 1px solid black;
   max-width: 700px;
   text-align: justify;
   color: #1d2a4d;
   background-color: rgba(255, 255, 255, 0.692);
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 1rem;
+  max-height: 500px;
+  overflow: auto;
 }
 
 footer {

@@ -6,7 +6,7 @@ function loadRoute(route) {
             body.backgroundImage = "url('https://vesti-k.ru/i/65/656634da1850b28331cb173f9c2fe0bf.jpg')";
 
             app.innerHTML = `<div>
-         <h2>Welcome to Safe Travels & Passengers</h2>
+         <h1>Welcome to Safe Travels & Passengers</h1>
          <p>Safe Travels & Passengers is your trusted partner for safe, comfortable and affordable private bus travel. Whether you're traveling for business, family events, or group tours, our modern buses and professional drivers are here to ensure you enjoy every moment of your journey.</p>
       </div>`;
             break;
