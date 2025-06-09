@@ -7,19 +7,13 @@ function loadRoute(route) {
 
             app.innerHTML = `<div>
          <h2>Welcome to Safe Travels & Passengers</h2>
-         <p>
-         Safe Travels & Passengers is your trusted partner for safe,
-         comfortable and affordable private bus travel. Whether you're
-         traveling for business, family events, or group tours, our modern
-          buses and professional drivers are here to ensure you enjoy every
-          moment of your journey.
-        </p>
+         <p>Safe Travels & Passengers is your trusted partner for safe, comfortable and affordable private bus travel. Whether you're traveling for business, family events, or group tours, our modern buses and professional drivers are here to ensure you enjoy every moment of your journey.</p>
       </div>`;
             break;
         case '#/about':
             app.innerHTML = `<div>
                 <h1>About</h1>
-                <p>This is a simple SPA using vanilla JavaScript.</p>
+                <p>Hello, travelers. We are a Pune based Travels compony providing you comfortable, safe and secure ride by our decent travel buses.</p>
                 </div>`;
             body.backgroundImage = "url('https://big-bus.ru/assets/images/setra-intro.jpg')";
             // body.backgroundSize = 'contain';
@@ -60,12 +54,12 @@ menu.addEventListener("click", () => {
     mobileMenu.style.display = "block";
     mobileMenu.style.display = "flex";
     mobileMenu.style.flexDirection = "column";
-    isMenuDisplayed = true;   
+    isMenuDisplayed = true;
 });
 
 const closeButton = document.getElementById("close");
 
-closeButton.addEventListener("click",()=>{
+closeButton.addEventListener("click", () => {
     mobileMenu.style.display = "none";
 });
 
