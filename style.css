@@ -103,7 +103,6 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0;
 }
 
 .hero img {
@@ -115,7 +114,6 @@ nav a:hover {
 
 .hero h1 {
   font-size: 1rem;
-  /* border: 1px solid black; */
   margin-bottom: 1rem;
   color: #2b3a67;
   text-align: center;
@@ -150,9 +148,9 @@ footer {
     text-align: left;
   }
   .hero div {
-    max-width: 50%;
+    max-width: 80%;
   }
-   header div h1 {
+  header div h1 {
     display: none;
   }
 
@@ -166,8 +164,4 @@ footer {
   nav {
     display: none;
   }
-}
-
-@media (max-width: 1000px) {
- 
 }
