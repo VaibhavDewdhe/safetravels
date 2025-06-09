@@ -23,10 +23,12 @@ body {
   align-items: center;
   gap: 20px;
   /* border: 1px solid black; */
-  width: 200px;
-border-radius: 0 0 0 1rem;
+  width: 150px;
+  border-radius: 0 0 0 1rem;
   max-width: 100%;
-  padding: 1.5rem;
+  /* padding: 1rem; */
+  padding: 2rem 0;
+
   /* height: 100vh; */
   background-color: #2b3a67;
   display: none;
@@ -37,7 +39,7 @@ border-radius: 0 0 0 1rem;
   cursor: pointer;
 }
 header {
-  background-color: #2b3a6781;
+  background-color: rgba(135, 183, 235, 0.637);
   color: white;
   padding: 1rem 2rem;
   text-align: center;
@@ -151,6 +153,4 @@ footer {
   nav {
     display: none;
   }
-
-  
 }
