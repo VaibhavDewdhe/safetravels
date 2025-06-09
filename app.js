@@ -11,24 +11,26 @@ function loadRoute(route) {
       </div>`;
             break;
         case '#/about':
-            app.innerHTML = `
+            app.innerHTML = `<div>
                 <h1>About</h1>
                 <p>Hello, travelers. We are a Pune based Travels compony providing you comfortable, safe and secure ride by our decent travel buses.</p>
-                `;
+                </div>`;
             body.backgroundImage = "url('https://big-bus.ru/assets/images/setra-intro.jpg')";
             // body.backgroundSize = 'contain';
 
             break;
         case '#/contact':
-            app.innerHTML = `
+            app.innerHTML = `<div>
                 <h1>Contact</h1>
                 <p>Email us at contact@example.com</p>
-            `;
+            </div>`;
             body.backgroundImage = "url('https://www.trumpf.com/filestorage/TRUMPF_Magazine/_processed_/0/8/csm_BYD-electric-busses-with-TRUMPF-laser-welded-batteries_6b2a4cee36.jpg')";
             break;
         case '#/services':
-            app.innerHTML = `<h1>service</h1>
-                <p>Email us at contact@example.com</p>`;
+            app.innerHTML = `<div>
+                <h1>service</h1>
+                <p>Email us at contact@example.com</p>
+            </div>`;
             body.backgroundImage = "url('./images/[GetPaidStock.com]-68464e3cabbe6.jpg')";
 
 
