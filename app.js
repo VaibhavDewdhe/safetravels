@@ -17,18 +17,28 @@ function loadRoute(route) {
       </div>`;
             break;
         case '#/about':
-            app.innerHTML = '<h1>About</h1><p>This is a simple SPA using vanilla JavaScript.</p>';
-            body.backgroundImage = "url('./ChatGPT Image Jun 8, 2025, 05_08_01 PM.png')"; 
+            app.innerHTML = `<div>
+                <h1>About</h1>
+                <p>This is a simple SPA using vanilla JavaScript.</p>
+                </div>`;
+            body.backgroundImage = "url('https://big-bus.ru/assets/images/setra-intro.jpg')";
             // body.backgroundSize = 'contain';
-            
+
             break;
         case '#/contact':
-            app.innerHTML = '<h1>Contact</h1><p>Email us at contact@example.com</p>';
+            app.innerHTML = `<div>
+                <h1>Contact</h1>
+                <p>Email us at contact@example.com</p>
+            </div>`;
             body.backgroundImage = "url('https://www.trumpf.com/filestorage/TRUMPF_Magazine/_processed_/0/8/csm_BYD-electric-busses-with-TRUMPF-laser-welded-batteries_6b2a4cee36.jpg')";
             break;
         case '#/services':
-            app.innerHTML = '<h1>service</h1><p>Email us at contact@example.com</p>';
-            body.backgroundImage = "url('https://big-bus.ru/assets/images/setra-intro.jpg')";
+            app.innerHTML = `<div>
+                <h1>service</h1>
+                <p>Email us at contact@example.com</p>
+            </div>`;
+            body.backgroundImage = "url('./images/[GetPaidStock.com]-68464e3cabbe6.jpg')";
+
 
             break;
         default:
@@ -43,3 +53,20 @@ window.addEventListener('hashchange', () => {
 window.addEventListener('load', () => {
     loadRoute(location.hash || '#/');
 });
+
+const mobileMenu = document.getElementById("mobileMenu");
+
+menu.addEventListener("click", () => {
+    mobileMenu.style.display = "block";
+    mobileMenu.style.display = "flex";
+    mobileMenu.style.flexDirection = "column";
+    isMenuDisplayed = true;   
+});
+
+const closeButton = document.getElementById("close");
+
+closeButton.addEventListener("click",()=>{
+    mobileMenu.style.display = "none";
+});
+
+

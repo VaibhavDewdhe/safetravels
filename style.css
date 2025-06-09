@@ -12,9 +12,30 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   /* backdrop-filter: blur(3px); */
 }
-
+#mobileMenu {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 1px solid black; */
+  width: 200px;
+border-radius: 0 0 0 1rem;
+  max-width: 100%;
+  padding: 1.5rem;
+  /* height: 100vh; */
+  background-color: #2b3a67;
+  display: none;
+}
+#close {
+  width: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
 header {
   background-color: #2b3a6781;
   color: white;
@@ -36,15 +57,23 @@ header h1 {
   font-size: 2rem;
 }
 
-header img {
+header #logo {
   width: 4rem;
   /* border: 1px solid black; */
   border-radius: 1rem;
 }
+
+header #menu {
+  width: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
 nav {
   /* background-color: #1d3d4ddf; */
   padding: 0.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 nav a {
@@ -53,7 +82,10 @@ nav a {
   margin: 0 1rem;
   font-weight: bold;
 }
-
+nav a:hover {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -108,7 +140,17 @@ footer {
   header div h1 {
     display: none;
   }
-  a{
+
+  header #menu {
+    display: block;
+  }
+  a {
     font-size: smaller;
   }
+
+  nav {
+    display: none;
+  }
+
+  
 }
